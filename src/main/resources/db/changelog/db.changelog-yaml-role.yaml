@@ -1,0 +1,49 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-table-role
+      author: Johnny Salgado
+      preConditions:
+        - onFail: MARK_RAN
+          not:
+            tableExists:
+              tableName: role
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: role_pkey
+                  name: id
+                  type: BIGINT
+              - column:
+                  constraints:
+                    nullable: false
+                  name: description
+                  type: VARCHAR(32)
+              - column:
+                  constraints:
+                    nullable: false
+                  name: status
+                  type: boolean
+              - column:
+                  constraints:
+                    nullable: false
+                  name: created
+                  type: timestamp
+              - column:
+                  constraints:
+                    nullable: false
+                  name: created_by
+                  type: VARCHAR(64)
+              - column:
+                  name: updated
+                  type: timestamp
+              - column:
+                  constraints:
+                    nullable: false
+                  name: updated_by
+                  type: VARCHAR(64)
+            tableName: role

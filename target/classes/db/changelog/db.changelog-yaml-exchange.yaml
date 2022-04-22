@@ -1,0 +1,81 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-table-exchange
+      author: Johnny Salgado
+      preConditions:
+        - onFail: MARK_RAN
+          not:
+            tableExists:
+              tableName: exchange
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: exchange_pkey
+                  name: id
+                  type: BIGINT
+              - column:
+                  name: currency_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+                    foreignKeyName: exchange_fk
+                    references: currency(id)
+              - column:
+                  name: user_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+                    foreignKeyName: exchange_fk_1
+                    references: users(id)
+              - column:
+                  constraints:
+                    nullable: false
+                  name: exchange_date
+                  type: timestamp
+              - column:
+                  name: sale_value
+                  type: decimal(6, 3)
+              - column:
+                  name: purchase_value
+                  type: decimal(6, 3)
+              - column:
+                  name: sale_amount
+                  type: decimal(10, 3)
+              - column:
+                  name: purchase_amount
+                  type: decimal(10, 3)
+              - column:
+                  name: sale_total
+                  type: decimal(10, 3)
+              - column:
+                  name: purchase_total
+                  type: decimal(6, 3)
+              - column:
+                  constraints:
+                    nullable: false
+                  name: status
+                  type: boolean
+              - column:
+                  constraints:
+                    nullable: false
+                  name: created
+                  type: timestamp
+              - column:
+                  constraints:
+                    nullable: false
+                  name: created_by
+                  type: VARCHAR(64)
+              - column:
+                  name: updated
+                  type: timestamp
+              - column:
+                  constraints:
+                    nullable: false
+                  name: updated_by
+                  type: VARCHAR(64)
+            tableName: exchange
