@@ -199,3 +199,10 @@ CREATE TABLE public.exchange (
 	CONSTRAINT exchange_fk FOREIGN KEY (currency_id) REFERENCES public.currency(id),
 	CONSTRAINT exchange_fk_1 FOREIGN KEY (user_id) REFERENCES public.users(id)
 );
+
+INSERT INTO public.currency (description, abbreviation, created_by) VALUES('Soles', 'S/.', 'johnny');
+INSERT INTO public.currency (description, abbreviation, created_by) VALUES('Dólar americano', 'US$', 'johnny');
+INSERT INTO public.currency (description, abbreviation, created_by) VALUES('Euro', '€', 'johnny');
+
+INSERT INTO public."role" (description, created_by) VALUES('ROLE_ADMIN', 'johnny');
+INSERT INTO public."role" (description, created_by) VALUES('ROLE_USER', 'johnny');
