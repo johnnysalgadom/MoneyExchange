@@ -2,8 +2,6 @@ package com.bcp.challenge.moneyexchange.controller;
 
 import com.bcp.challenge.moneyexchange.domain.JpaRole;
 import com.bcp.challenge.moneyexchange.domain.JpaUser;
-import com.bcp.challenge.moneyexchange.model.Role;
-import com.bcp.challenge.moneyexchange.model.User;
 import com.bcp.challenge.moneyexchange.payload.LoginDto;
 import com.bcp.challenge.moneyexchange.payload.SignUpDto;
 import com.bcp.challenge.moneyexchange.payload.TokenResponseDto;
@@ -19,6 +17,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,6 +30,7 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import java.util.stream.Collectors;
 
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {

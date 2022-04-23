@@ -200,7 +200,6 @@ CREATE TABLE public.exchange (
 	CONSTRAINT exchange_fk_1 FOREIGN KEY (user_id) REFERENCES public.users(id)
 );
 
-INSERT INTO public.currency (description, abbreviation, created_by) VALUES('Soles', 'S/.', 'johnny');
 INSERT INTO public.currency (description, abbreviation, created_by) VALUES('Dólar americano', 'US$', 'johnny');
 INSERT INTO public.currency (description, abbreviation, created_by) VALUES('Euro', '€', 'johnny');
 
