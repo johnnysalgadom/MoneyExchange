@@ -13,8 +13,11 @@ import com.bcp.challenge.moneyexchange.validators.UserValidator;
 @Service
 public class UserServiceImpl extends GenericService<JpaUser, JpaUserRepository, UserValidator> implements UserService {
 
-    public UserServiceImpl(JpaUserRepository repository, UserValidator userValidator) {
+	private JpaUserRepository userRepository;
+
+	public UserServiceImpl(JpaUserRepository repository, UserValidator userValidator) {
         super(repository, userValidator);
+        this.userRepository = repository;
     }
 
     @Override
@@ -24,5 +27,11 @@ public class UserServiceImpl extends GenericService<JpaUser, JpaUserRepository, 
 
         return user;
     }
+
+	@Override
+	public JpaUser findByUsername(String username) {
+		JpaUser user = userRepository.findByUsername(username);
+		return user;
+	}
 
 }

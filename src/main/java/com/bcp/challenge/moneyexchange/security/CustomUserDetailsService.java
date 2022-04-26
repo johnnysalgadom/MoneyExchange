@@ -29,7 +29,7 @@ public class CustomUserDetailsService implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
     	JpaUser user = userRepository.findByUsername(username);
     	if (user == null) {
-    		throw new EntityNotFoundException("No user found for username " + username);
+    		throw new EntityNotFoundException("No existe user por username " + username);
     	}
     	Set<JpaRole> roles = new HashSet<>();
     	roles.add(user.getRole());

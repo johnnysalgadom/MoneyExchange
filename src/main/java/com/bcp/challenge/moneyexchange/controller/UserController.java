@@ -10,7 +10,7 @@ import com.bcp.challenge.moneyexchange.services.impl.UserServiceImpl;
 import com.bcp.challenge.moneyexchange.domain.JpaUser;
 
 @CrossOrigin
-@RequestMapping("user")
+@RequestMapping("/api/user")
 @RestController
 public class UserController extends GenericController<UserServiceImpl, JpaUser, User> {
 

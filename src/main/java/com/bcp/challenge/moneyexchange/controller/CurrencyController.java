@@ -10,7 +10,7 @@ import com.bcp.challenge.moneyexchange.services.CurrencyService;
 import com.bcp.challenge.moneyexchange.services.impl.CurrencyServiceImpl;
 
 @CrossOrigin
-@RequestMapping("currency")
+@RequestMapping("/api/currency")
 @RestController
 public class CurrencyController extends GenericController<CurrencyServiceImpl, JpaCurrency, Currency> {
 
