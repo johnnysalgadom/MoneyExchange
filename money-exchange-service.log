@@ -1,22 +1,7 @@
-2022-04-26 09:10:44,416 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h43m15s419ms183탎).
-2022-04-26 11:17:34,732 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2022-04-26 11:17:34,736 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
-2022-04-26 11:17:46,008 INFO com.bcp.challenge.moneyexchange.MoneyExchangeApplication [main] Starting MoneyExchangeApplication using Java 11.0.11 on DESKTOP-ALH9ROD with PID 16624 (D:\bcp\MoneyExchange\target\classes started by USUARIO in D:\bcp\MoneyExchange)
-2022-04-26 11:17:46,011 INFO com.bcp.challenge.moneyexchange.MoneyExchangeApplication [main] The following 1 profile is active: "develop"
-2022-04-26 11:17:47,020 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2022-04-26 11:17:47,020 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-26 11:17:47,105 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
-2022-04-26 11:17:47,240 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2022-04-26 11:17:47,336 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2022-04-26 11:17:47,510 INFO liquibase.database [main] Set default schema name to public
-2022-04-26 11:17:47,560 INFO liquibase.lockservice [main] Successfully acquired change log lock
-2022-04-26 11:17:47,753 INFO liquibase.changelog [main] Reading from public.databasechangelog
-2022-04-26 11:17:47,787 INFO liquibase.lockservice [main] Successfully released change log lock
-2022-04-26 11:17:47,831 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-04-26 11:17:47,861 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-04-26 11:17:47,947 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-04-26 11:17:48,018 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2022-04-26 11:17:48,485 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-04-26 11:17:49,216 INFO com.bcp.challenge.moneyexchange.MoneyExchangeApplication [main] Started MoneyExchangeApplication in 3.522 seconds (JVM running for 3.818)
-2022-04-26 11:18:15,380 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-26 11:26:17,919 WARN org.apache.catalina.util.SessionIdGeneratorBase [http-nio-8090-exec-8] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [149] milliseconds.
+2022-04-27 10:00:44,505 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15h18m13s216ms834탎200ns).
+2022-04-27 14:25:19,410 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h10m2s700ms722탎700ns).
+2022-04-27 14:52:23,349 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m3s604ms865탎400ns).
+2022-04-27 15:47:55,476 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m1s511ms29탎400ns).
+2022-04-27 16:51:59,052 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h2m3s550ms187탎600ns).
+2022-04-27 17:34:10,043 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-04-27 17:34:10,051 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
